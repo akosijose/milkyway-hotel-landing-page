@@ -82,6 +82,7 @@ header nav ul li a:hover {
 
 .hero-section img {
   width: 100%;
+  height: 80vh;
 }
 
 section.welcome {
@@ -101,6 +102,7 @@ section.welcome .welcome-container {
 
 section.welcome .welcome-container h2 {
   margin-bottom: 2rem;
+  font-size: 2.2rem;
 }
 
 section.welcome .welcome-container .text-content {
@@ -114,6 +116,7 @@ section.welcome .facilities {
 
 section.welcome .facilities h4 {
   margin-bottom: 2rem;
+  font-size: 1.5rem;
 }
 
 section.welcome .facilities ul li {
@@ -265,6 +268,10 @@ section.middle .gallery img {
 
 section#gallery {
   margin: 3rem 0;
+}
+
+section#gallery h1 {
+  font-size: 2.5rem;
 }
 
 section#gallery .title-container {
@@ -419,7 +426,7 @@ section#gallery figure {
   margin: 3px;
   overflow: hidden;
   position: relative;
-  background-color: #1d1d1d4b;
+  background-color: rgba(15, 15, 15, 0.5);
   -webkit-transition: background-color 0.5s;
   transition: background-color 0.5s;
 }
@@ -452,6 +459,7 @@ section#gallery figure figcaption h3 {
 
 section#gallery figure figcaption .additional {
   font-family: "Roboto", sans-serif;
+  margin-top: 1.2rem;
 }
 
 section#gallery figure figcaption .additional p {
