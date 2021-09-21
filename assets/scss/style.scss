@@ -12,12 +12,14 @@ html,
 body,
 ul,
 a {
+  scroll-behavior: smooth;
   font-family: "Roboto", sans-serif;
   list-style-type: none;
   text-decoration: none;
 }
 header {
-  height: 15vh;
+  // height: 15vh;
+  height: 6rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -25,7 +27,7 @@ header {
 
   .logo {
     img {
-      width: 100px;
+      width: 140px;
     }
   }
 
@@ -121,6 +123,8 @@ section.welcome {
   }
 }
 
+// default gallery shadow
+
 // section middle
 section.middle {
   background-color: #cecece;
@@ -140,6 +144,14 @@ section.middle {
       display: flex;
       align-items: center;
       margin: 1rem auto;
+
+      .text-content {
+        color: $primary-color;
+
+        p {
+          font-style: italic;
+        }
+      }
 
       span {
         display: inline-block;
@@ -195,6 +207,87 @@ section.middle {
 
     img {
       // width: 100px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+}
+
+section#gallery {
+  margin: 3rem 0;
+
+  .title-container {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0 3rem 0;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: center;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 120px);
+    grid-gap: 2rem;
+
+    .gallery__item {
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+        rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+
+    .gallery__item--1 {
+      grid-column: 1 / 3;
+      grid-row: 1 / 3;
+    }
+    .gallery__item--2 {
+      grid-column: 3 / 5;
+      grid-row: 1 / 3;
+    }
+    .gallery__item--3 {
+      grid-column: 5 / 7;
+      grid-row: 1 / 3;
+    }
+    .gallery__item--4 {
+      grid-column: 7 / 9;
+      grid-row: 1 /3;
+    }
+    .gallery__item--5 {
+      grid-column: 1 / 3;
+      grid-row: 3 /5;
+    }
+    .gallery__item--6 {
+      grid-column: 3 / 5;
+      grid-row: 3 /5;
+    }
+    .gallery__item--7 {
+      grid-column: 5 / 7;
+      grid-row: 3 /5;
+    }
+    .gallery__item--8 {
+      grid-column: 7 / 9;
+      grid-row: 3 /5;
+    }
+    .gallery__item--9 {
+      grid-column: 1 / 3;
+      grid-row: 5 / 7;
+    }
+    .gallery__item--10 {
+      grid-column: 3 / 5;
+      grid-row: 5 / 7;
+    }
+    .gallery__item--11 {
+      grid-column: 5 / 7;
+      grid-row: 5 / 7;
+    }
+    .gallery__item--12 {
+      grid-column: 7 / 9;
+      grid-row: 5 / 7;
+    }
+
+    img {
       width: 100%;
       height: 100%;
       object-fit: cover;
