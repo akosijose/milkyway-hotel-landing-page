@@ -16,7 +16,7 @@ a {
 }
 
 header {
-  height: 15vh;
+  height: 6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
