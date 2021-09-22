@@ -601,12 +601,7 @@ section#accommodation figure {
   position: relative;
 }
 
-section#accommodation figure .__side-footer {
-  display: block;
-}
-
-section#accommodation figure span,
-section#accommodation figure .__side-footer {
+section#accommodation figure span {
   position: absolute;
   bottom: 1rem;
   right: 1rem;
