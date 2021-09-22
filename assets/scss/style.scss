@@ -131,7 +131,7 @@ section.welcome {
 
 // section middle
 section.middle {
-  background-color: #cecece;
+  background-color: #f4f4f4;
   padding: 3rem;
   display: flex;
   justify-content: center;
@@ -388,7 +388,16 @@ section#gallery {
 }
 
 section#things-to-do {
+  background-color: #f4f4f4;
+}
+
+section#things-to-do,
+section#accommodation {
   padding: 4rem 6rem;
+
+  .gallery__item {
+    margin: 1.5rem 0 1.5rem 0;
+  }
 
   h1 {
     padding-bottom: 3rem;
@@ -424,6 +433,34 @@ section#things-to-do {
         margin-right: 1.2rem;
         font-size: small;
       }
+    }
+  }
+}
+
+section#accommodation {
+  .text-content {
+    p {
+      inline-size: min-content;
+      width: 30rem;
+    }
+    .__break {
+      margin-bottom: 1rem;
+    }
+  }
+
+  figure {
+    position: relative;
+    .__side-footer {
+      display: block;
+    }
+    span,
+    .__side-footer {
+      position: absolute;
+      bottom: 1rem;
+      right: 1rem;
+      font-size: small;
+      font-style: italic;
+      color: $primary-color;
     }
   }
 }
