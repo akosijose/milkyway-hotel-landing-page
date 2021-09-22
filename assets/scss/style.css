@@ -53,8 +53,8 @@ header nav ul li:last-child {
   background-color: #3f3e3e;
   border-radius: 5px;
   border: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 header nav ul li:last-child:hover:last-child {
@@ -72,8 +72,8 @@ header nav ul li:last-child a {
 header nav ul li a {
   color: #3f3e3e;
   text-transform: uppercase;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 header nav ul li a:hover {
@@ -116,6 +116,7 @@ section.welcome .facilities {
 
 section.welcome .facilities h4 {
   margin-bottom: 2rem;
+  margin-left: 1.9rem;
   font-size: 1.5rem;
 }
 
@@ -514,5 +515,37 @@ section#gallery figure:hover .additional {
 section#gallery figure:hover figcaption::before {
   -webkit-transform: rotateZ(-45deg) translate3d(0, 0, 0);
           transform: rotateZ(-45deg) translate3d(0, 0, 0);
+}
+
+section#things-to-do {
+  padding: 4rem 6rem;
+}
+
+section#things-to-do h1 {
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+section#things-to-do img {
+  width: 22rem;
+}
+
+section#things-to-do figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+section#things-to-do figure:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+          box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+section#things-to-do .text-content {
+  margin-left: 2rem;
 }
 /*# sourceMappingURL=style.css.map */
