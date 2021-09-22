@@ -548,4 +548,8 @@ section#things-to-do figure:hover {
 section#things-to-do .text-content {
   margin-left: 2rem;
 }
+
+section#things-to-do .text-content h3 {
+  margin-bottom: 1.3rem;
+}
 /*# sourceMappingURL=style.css.map */
