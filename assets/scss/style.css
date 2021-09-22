@@ -53,8 +53,8 @@ header nav ul li:last-child {
   background-color: #3f3e3e;
   border-radius: 5px;
   border: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 header nav ul li:last-child:hover:last-child {
@@ -72,8 +72,8 @@ header nav ul li:last-child a {
 header nav ul li a {
   color: #3f3e3e;
   text-transform: uppercase;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 header nav ul li a:hover {
@@ -82,6 +82,7 @@ header nav ul li a:hover {
 
 .hero-section img {
   width: 100%;
+  height: 80vh;
 }
 
 section.welcome {
@@ -101,6 +102,7 @@ section.welcome .welcome-container {
 
 section.welcome .welcome-container h2 {
   margin-bottom: 2rem;
+  font-size: 2.2rem;
 }
 
 section.welcome .welcome-container .text-content {
@@ -114,6 +116,8 @@ section.welcome .facilities {
 
 section.welcome .facilities h4 {
   margin-bottom: 2rem;
+  margin-left: 1.9rem;
+  font-size: 1.5rem;
 }
 
 section.welcome .facilities ul li {
@@ -267,6 +271,10 @@ section#gallery {
   margin: 3rem 0;
 }
 
+section#gallery h1 {
+  font-size: 2.5rem;
+}
+
 section#gallery .title-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -413,5 +421,150 @@ section#gallery .gallery img {
   -o-object-fit: cover;
      object-fit: cover;
   display: block;
+}
+
+section#gallery figure {
+  margin: 3px;
+  overflow: hidden;
+  position: relative;
+  background-color: rgba(15, 15, 15, 0.5);
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+section#gallery figure img {
+  width: calc(100% + 60px);
+  opacity: 0.7;
+  -webkit-transform: translate3d(0, -20px, 0) scale(1.12);
+          transform: translate3d(0, -20px, 0) scale(1.12);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+section#gallery figure figcaption {
+  position: absolute;
+  padding: 1rem 2rem;
+  top: 0;
+  color: #fff;
+  text-align: center;
+}
+
+section#gallery figure figcaption h3 {
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background: #1b1b1b;
+  display: inline-block;
+  padding: 0.5em 0.7em;
+}
+
+section#gallery figure figcaption .additional {
+  font-family: "Roboto", sans-serif;
+  margin-top: 1.2rem;
+}
+
+section#gallery figure figcaption .additional p {
+  margin-bottom: 20px;
+}
+
+section#gallery figure figcaption::before {
+  content: "";
+  border-top: 60px solid white;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 30px;
+  left: -75%;
+  height: 100%;
+  -webkit-transform: rotateZ(-45deg) translate3d(0, -30%, 0);
+          transform: rotateZ(-45deg) translate3d(0, -30%, 0);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+section#gallery figure .additional {
+  opacity: 0;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+section#gallery figure:hover {
+  background: black;
+}
+
+section#gallery figure:first-child {
+  margin-left: 0;
+}
+
+section#gallery figure:hover img {
+  -webkit-transform: translate3d(0, 0, 0) scale(1);
+          transform: translate3d(0, 0, 0) scale(1);
+  opacity: 0.4;
+}
+
+section#gallery figure:hover .additional {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+section#gallery figure:hover figcaption::before {
+  -webkit-transform: rotateZ(-45deg) translate3d(0, 0, 0);
+          transform: rotateZ(-45deg) translate3d(0, 0, 0);
+}
+
+section#things-to-do {
+  padding: 4rem 6rem;
+}
+
+section#things-to-do h1 {
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+section#things-to-do img {
+  width: 22rem;
+}
+
+section#things-to-do figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+section#things-to-do figure:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+          box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+section#things-to-do .text-content {
+  margin-left: 2rem;
+}
+
+section#things-to-do .text-content h3 {
+  margin-bottom: 1.3rem;
+}
+
+section#things-to-do .text-content .__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1rem;
+}
+
+section#things-to-do .text-content .__title span {
+  margin-right: 1.2rem;
+  font-size: small;
 }
 /*# sourceMappingURL=style.css.map */

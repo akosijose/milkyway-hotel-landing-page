@@ -18,6 +18,19 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+
     <title>MilkyWay Hotel &amp; Resort</title>
   </head>
   <body>
@@ -27,12 +40,23 @@
       </div>
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#">Accommodation</a></li>
-          <li><a href="#">Things to do</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Reservation</a></li>
+          <li>
+            <a class="text-decoration-none" href="#">Home</a>
+          </li>
+          <li>
+            <a href="#gallery" class="text-decoration-none">Gallery</a>
+          </li>
+          <li>
+            <a href="#things-to-do" class="text-decoration-none"
+              >Things to do</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-decoration-none">Accommodation</a>
+          </li>
+          <li>
+            <a href="#" class="text-decoration-none">Reservation</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -52,6 +76,15 @@
             historical parts of town easy by car or walking down the beautiful
             city of Baguio.
           </p>
+          <br />
+          <p>
+            Take a walk to nearby Session Road and discover unique restaurants.
+            Buy farm-fresh vegetables and fruits, as well as local delicacies
+            and products at the Baguio City Public Market. Explore tourist
+            destinations old and new such as Burnham Park, Camp John Hay, and
+            BenCab Museum. For more fun and adventure, you can also go
+            strawberry picking at La Trinidad Strawberry Farm.
+          </p>
         </div>
       </div>
       <div class="facilities">
@@ -70,6 +103,8 @@
         </div>
       </div>
     </section>
+
+    <!-- Testimonial Section -->
     <section class="middle">
       <div class="testimonials">
         <div class="testimonial">
@@ -140,9 +175,11 @@
         </figure>
       </div>
     </section>
+
+    <!-- section GALLERY -->
     <section id="gallery">
       <div class="title-container">
-        <h1>Gallery</h1>
+        <h1 class="text-uppercase">Gallery</h1>
       </div>
       <div class="gallery flex">
         <div class="gallery content-gallery">
@@ -152,6 +189,17 @@
               class="gallery__img"
               alt="Image 1"
             />
+
+            <figcaption>
+              <h3>Standard room</h3>
+              <div class="additional">
+                <p>
+                  A standard room is likely the same as a queen or a single
+                  room, great for a solo traveler or a couple. Expect a double
+                  bed.
+                </p>
+              </div>
+            </figcaption>
           </figure>
           <figure class="gallery__item gallery__item--2">
             <img
@@ -159,6 +207,15 @@
               class="gallery__img"
               alt="Image 2"
             />
+            <figcaption>
+              <h3>Murphy Room</h3>
+              <div class="additional">
+                <p>
+                  The room size or area of Murphy Room Types are generally
+                  between 20 m² to 40 m².
+                </p>
+              </div>
+            </figcaption>
           </figure>
           <figure class="gallery__item gallery__item--3">
             <img
@@ -166,6 +223,15 @@
               class="gallery__img"
               alt="Image 3"
             />
+            <figcaption>
+              <h3>Twin</h3>
+              <div class="additional">
+                <p>
+                  The room size or area of Twin Rooms are generally between 32
+                  m² to 40 m².
+                </p>
+              </div>
+            </figcaption>
           </figure>
           <figure class="gallery__item gallery__item--4">
             <img
@@ -173,6 +239,16 @@
               class="gallery__img"
               alt="Image 4"
             />
+
+            <figcaption>
+              <h3>Suite / Executive Suite</h3>
+              <div class="additional">
+                <p>
+                  The room size or area of Suite rooms are generally between 70
+                  m² to 100 m².
+                </p>
+              </div>
+            </figcaption>
           </figure>
           <figure class="gallery__item gallery__item--5">
             <img
@@ -180,6 +256,13 @@
               class="gallery__img"
               alt="Image 5"
             />
+
+            <figcaption>
+              <h3>Mini-Suite</h3>
+              <div class="additional">
+                <p>Mini-suite is around 62m2 to 80m2.</p>
+              </div>
+            </figcaption>
           </figure>
           <figure class="gallery__item gallery__item--6">
             <img
@@ -187,6 +270,16 @@
               class="gallery__img"
               alt="Image 6"
             />
+
+            <figcaption>
+              <h3>Queen's Room</h3>
+              <div class="additional">
+                <p>
+                  The room size or area of Queen Rooms are generally between 32
+                  m² to 50 m².
+                </p>
+              </div>
+            </figcaption>
           </figure>
           <figure class="gallery__item gallery__item--7">
             <img
@@ -194,6 +287,13 @@
               class="gallery__img"
               alt="Image 7"
             />
+
+            <figcaption>
+              <h3>Mini-Suite</h3>
+              <div class="additional">
+                <p>A Mini-suite is around 62m2 to 80m2.</p>
+              </div>
+            </figcaption>
           </figure>
           <figure class="gallery__item gallery__item--8">
             <img
@@ -201,6 +301,16 @@
               class="gallery__img"
               alt="Image 8"
             />
+
+            <figcaption>
+              <h3>Executive Floor/Floored Room</h3>
+              <div class="additional">
+                <p>
+                  A room located on the ‘executive floor’ which enables
+                  convenient access to the executive lounge.
+                </p>
+              </div>
+            </figcaption>
           </figure>
           <figure class="gallery__item gallery__item--9">
             <img
@@ -208,6 +318,16 @@
               class="gallery__img"
               alt="Image 9"
             />
+
+            <figcaption>
+              <h3>Villa</h3>
+              <div class="additional">
+                <p>
+                  The room size or area of Villa’s are generally between 100 m²
+                  to 150 m².
+                </p>
+              </div>
+            </figcaption>
           </figure>
           <figure class="gallery__item gallery__item--10">
             <img
@@ -215,6 +335,15 @@
               class="gallery__img"
               alt="Image 10"
             />
+
+            <figcaption>
+              <h3>Standard room</h3>
+              <div class="additional">
+                <p>
+                  A standard room is likely the same as a queen or a single room
+                </p>
+              </div>
+            </figcaption>
           </figure>
           <figure class="gallery__item gallery__item--11">
             <img
@@ -222,6 +351,16 @@
               class="gallery__img"
               alt="Image 11"
             />
+
+            <figcaption>
+              <h3>Double</h3>
+              <div class="additional">
+                <p>
+                  The room size or area of Double Rooms are generally between 40
+                  m² to 45 m².
+                </p>
+              </div>
+            </figcaption>
           </figure>
           <figure class="gallery__item gallery__item--12">
             <img
@@ -229,9 +368,114 @@
               class="gallery__img"
               alt="Image 12"
             />
+
+            <figcaption>
+              <h3>Mini-Suite</h3>
+              <div class="additional">
+                <p>A Mini-suite is around 62m2 to 80m2.</p>
+              </div>
+            </figcaption>
           </figure>
         </div>
       </div>
     </section>
+    <section id="things-to-do">
+      <div class="title-container">
+        <h1 class="text-uppercase">Tourist Spots Near The Hotel</h1>
+      </div>
+      <div class="container">
+        <div class="image-container">
+          <!-- wright park -->
+          <figure class="gallery__item gallery__item--1">
+            <img
+              src="./assets/images/Wright-Park.jpg"
+              class="gallery__img"
+              alt="Wright park"
+            />
+            <div class="text-content">
+              <div class="__title">
+                <h3>Wright Park</h3>
+                <span>4 km</span>
+              </div>
+              <p>
+                This is a favorite leisure spot for both locals and tourists.
+                It’s a lush park that offers walking and jogging trails, biking
+                paths, and rest spots. It features a long pond or pool that
+                almost covers the whole stretch of concrete path linking the
+                Wright Park Kiosk and The Mansion facade. It also has a pine
+                tree-covered forest hill adjacent to the horse stable.
+              </p>
+            </div>
+          </figure>
+
+          <!-- La-trinidad-strawberry-farm -->
+          <figure class="gallery__item gallery__item--2">
+            <img
+              src="./assets/images/la-trinidad-strawberry-farm.jpg"
+              class="gallery__img"
+              alt="La-trinidad-strawberry-farm"
+            />
+
+            <div class="text-content">
+              <div class="__title">
+                <h3>La Trinidad Strawberry Farm</h3>
+                <span>6 km</span>
+              </div>
+              <p>
+                Situated about 30 minutes north of Baguio is the most
+                popularStrawberry Farm in the area. It’s often associated with
+                Baguio City but is actually part of La Trinidad.
+              </p>
+            </div>
+          </figure>
+          <!--Baguio Botanical Garden -->
+          <figure class="gallery__item gallery__item--3">
+            <img
+              src="./assets/images/Baguio-Botanical-Garden.jpg"
+              class="gallery__img"
+              alt="Baguio Botanical Garden"
+            />
+
+            <div class="text-content">
+              <div class="__title">
+                <h3>Baguio Botanical Garden</h3>
+                <span>2 km</span>
+              </div>
+              <p>
+                This is another popular attraction in the city where visitors
+                can enjoy the relaxing atmosphere of the verdant surroundings.
+                The extensive garden park is just a short drive from Baguio’s
+                Central Business District.
+              </p>
+            </div>
+          </figure>
+
+          <!-- Bell  -->
+          <figure class="gallery__item gallery__item--4">
+            <img
+              src="./assets/images/Bell-Church.jpg"
+              class="gallery__img"
+              alt="Bell"
+            />
+
+            <div class="text-content">
+              <div class="__title">
+                <h3>Bell Church</h3>
+                <span>8 km</span>
+              </div>
+              <p>
+                The serene atmosphere and the view while strolling around the
+                courtyard attract a lot of tourists to the temple, making it a
+                major tourist destination. It also features a small lily pond.
+              </p>
+            </div>
+          </figure>
+        </div>
+        <div class="text-content"></div>
+      </div>
+    </section>
+    <section id="accommodation"></section>
+
+    <!-- script -->
   </body>
 </html>
