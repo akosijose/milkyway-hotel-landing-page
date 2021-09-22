@@ -386,10 +386,6 @@ section#gallery {
   }
 }
 
-section#things-to-do {
-  background-color: #f4f4f4;
-}
-
 section#things-to-do,
 section#accommodation {
   padding: 4rem 6rem;
@@ -436,6 +432,13 @@ section#accommodation {
   }
 }
 
+section#things-to-do {
+  background-color: #f4f4f4;
+  figure {
+    background-color: $white;
+  }
+}
+
 section#accommodation {
   .text-content {
     p {
@@ -449,6 +452,7 @@ section#accommodation {
 
   figure {
     position: relative;
+    background-color: #f4f4f4;
 
     span {
       position: absolute;
@@ -458,5 +462,13 @@ section#accommodation {
       font-style: italic;
       color: $primary-color;
     }
+  }
+}
+
+section#reservation {
+  padding: 4rem 6rem;
+
+  .__custom-form {
+    margin: 5rem;
   }
 }

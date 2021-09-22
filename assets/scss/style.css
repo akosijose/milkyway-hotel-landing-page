@@ -517,10 +517,6 @@ section#gallery figure:hover figcaption::before {
           transform: rotateZ(-45deg) translate3d(0, 0, 0);
 }
 
-section#things-to-do {
-  background-color: #f4f4f4;
-}
-
 section#things-to-do,
 section#accommodation {
   padding: 4rem 6rem;
@@ -586,6 +582,14 @@ section#accommodation .text-content .__title span {
   font-size: small;
 }
 
+section#things-to-do {
+  background-color: #f4f4f4;
+}
+
+section#things-to-do figure {
+  background-color: #fff;
+}
+
 section#accommodation .text-content p {
   inline-size: -webkit-min-content;
   inline-size: -moz-min-content;
@@ -599,6 +603,7 @@ section#accommodation .text-content .__break {
 
 section#accommodation figure {
   position: relative;
+  background-color: #f4f4f4;
 }
 
 section#accommodation figure span {
@@ -608,5 +613,13 @@ section#accommodation figure span {
   font-size: small;
   font-style: italic;
   color: #3f3e3e;
+}
+
+section#reservation {
+  padding: 4rem 6rem;
+}
+
+section#reservation .__custom-form {
+  margin: 5rem;
 }
 /*# sourceMappingURL=style.css.map */
