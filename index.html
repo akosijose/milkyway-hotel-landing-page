@@ -19,10 +19,20 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- !lobster font for hero section -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
+
+    <!-- !custom css -->
     <link rel="stylesheet" href="./assets/scss/style.css" />
     <title>MilkyWay Hotel &amp; Resort</title>
   </head>
   <body>
+
+<!-- !button to scroll up -->
+<i class="fas fa-angle-up" onclick="topFunction()" id="myBtn" title="Go to top"></i>
+
     <!-- !header -->
     <header>
       <div class="logo">
@@ -47,7 +57,7 @@
             >
           </li>
           <li>
-            <a href="#" class="text-decoration-none">Reservation</a>
+            <a href="#reservation" class="text-decoration-none">Reservation</a>
           </li>
         </ul>
       </nav>
@@ -55,7 +65,13 @@
 
     <!-- !hero-section -->
     <div class="hero-section">
-      <img src="./assets/images/hero_logo.jpg" alt="hero-image" />
+      <div class="__header-top">
+        <h1 >Milkyway Hotel &amp; Resort</h1>
+      </div>
+      <div class="__header-content">
+        <h1>Make Your Stay Memorable</h1>
+      </div>
+      <!-- <img src="./assets/images/hero_logo.jpg" alt="hero-image" /> -->
     </div>
     <section id="welcome" class="welcome">
       <div class="welcome-container">
@@ -600,8 +616,90 @@
     <!-- !RESERVATION -->
     <section id="reservation">
       <h2 class="__secondary-title">Reservation</h2>
+      <form>
+        <div class="__select --item1">
+          <label for="country">Select Room</label> <br />
+          <select id="country" name="country">
+            <option value="Single Bed">Single Bed</option>
+            <option value="Double Bed">Double Bed</option>
+            <option value="Triple Bed">Triple Bed</option>
+            <option value="Queen Room">Queen Room</option>
+            <option value="King Room">King Room</option>
+          </select>
+          <div class="__container">
+            <div class="__calendar">
+              <input type="date" id="time-in" />
+              <input type="date" id="time-out" />
+            </div>
+            <div class="__number-people">
+              <input
+                type="text"
+                id="number-people"
+                placeholder="Number of people"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="__personal-info">
+          <div class="__contact-form">
+            <input
+              type="text"
+              placeholder="Fullname (surname, firstname, M.I)"
+            />
+          </div>
+          <div class="__contact-form">
+            <input type="email" placeholder="e.g mario@gmail.com" />
+          </div>
+          <div class="__contact-form">
+            <input type="text" placeholder="Phone number" />
+          </div>
+          <div class="__contact-form">
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Your message.."
+              style="height: 150px"
+            ></textarea>
+          </div>
+        </div>
+        <div class="__submit-button">
+          <input type="submit" class="submit" value="Ask for reservation" />
+          <spab>or call on +44 5678 92837287</spab>
+        </div>
+        <!-- <div class="__text"></div> -->
+      </form>
     </section>
 
+    <!-- ! footer -->
+    <footer>
+      <div class="__map">
+        <h3 style="text-transform: uppercase">MilkyWay Hotel</h3>
+        <img src="./assets/images/map-hotel.jpg" alt="milkyway map" />
+      </div>
+      <div class="__contact-info">
+        <h4>Contact info</h4>
+        <p>(024) 237-38-69 or 09-237-654-389</p>
+        <p class="email">hello@milkyway.com</p>
+        <p>
+          287 Paradise street <br />
+          Baguio city
+        </p>
+
+        <div class="__gps">
+          <h4 style="margin-bottom: 14px">GPS</h4>
+          <p>
+            N10, 0928 93 <br />
+            E7,9382 29
+          </p>
+        </div>
+      </div>
+      <div class="__group-2">
+        <h3>&copy; Group 2 cutie &#128521;</h2>
+      </div>
+    </footer>
+
     <!-- script -->
+    <script src="./app.js"></script>
   </body>
 </html>
