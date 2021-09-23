@@ -47,7 +47,7 @@
             >
           </li>
           <li>
-            <a href="#" class="text-decoration-none">Reservation</a>
+            <a href="#reservation" class="text-decoration-none">Reservation</a>
           </li>
         </ul>
       </nav>
@@ -600,6 +600,59 @@
     <!-- !RESERVATION -->
     <section id="reservation">
       <h2 class="__secondary-title">Reservation</h2>
+      <form>
+        <div class="__select --item1">
+          <label for="country">Select Room</label> <br />
+          <select id="country" name="country">
+            <option value="Single Bed">Single Bed</option>
+            <option value="Double Bed">Double Bed</option>
+            <option value="Triple Bed">Triple Bed</option>
+            <option value="Queen Room">Queen Room</option>
+            <option value="King Room">King Room</option>
+          </select>
+          <div class="__container">
+            <div class="__calendar">
+              <input type="date" id="time-in" />
+              <input type="date" id="time-out" />
+            </div>
+            <div class="__number-people">
+              <input
+                type="text"
+                id="number-people"
+                placeholder="Number of people"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="__personal-info">
+          <div class="__contact-form">
+            <input
+              type="text"
+              placeholder="Fullname (surname, firstname, M.I)"
+            />
+          </div>
+          <div class="__contact-form">
+            <input type="email" placeholder="e.g mario@gmail.com" />
+          </div>
+          <div class="__contact-form">
+            <input type="text" placeholder="Phone number" />
+          </div>
+          <div class="__contact-form">
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Your message.."
+              style="height: 150px"
+            ></textarea>
+          </div>
+        </div>
+        <div class="__submit-button">
+          <input type="submit" class="submit" value="Ask for reservation" />
+          <spab>or call on +44 5678 92837287</spab>
+        </div>
+        <!-- <div class="__text"></div> -->
+      </form>
     </section>
 
     <!-- script -->

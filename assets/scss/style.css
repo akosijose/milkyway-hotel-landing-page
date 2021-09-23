@@ -702,5 +702,67 @@ section#accommodation figure span {
 
 section#reservation {
   padding: 4rem 6rem;
+  background-color: #f4f4f4;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+
+section#reservation form {
+  width: 600px;
+}
+
+section#reservation form label {
+  font-size: 1.2rem;
+}
+
+section#reservation form input[type="text"],
+section#reservation form input[type="email"],
+section#reservation form textarea,
+section#reservation form select {
+  font-size: 1rem;
+  width: 30rem;
+  padding: 12px 20px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section#reservation form input[type="date"] {
+  width: 14.9rem;
+  padding: 12px 20px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section#reservation form .__number-people input[type="text"]#number-people {
+  font-size: 1rem;
+  width: 30rem;
+  padding: 12px 20px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section#reservation form input[type="submit"] {
+  background-color: #3f3e3e;
+  font-size: 1rem;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
