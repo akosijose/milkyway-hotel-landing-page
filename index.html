@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/scss/style.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -18,28 +18,18 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-      crossorigin="anonymous"
-    ></script>
 
+    <link rel="stylesheet" href="./assets/scss/style.css" />
     <title>MilkyWay Hotel &amp; Resort</title>
   </head>
   <body>
+    <!-- !header -->
     <header>
       <div class="logo">
         <img src="./assets/images/Milkywebexpress.png" alt="logo" />
       </div>
       <nav>
-        <ul>
+        <ul class="mb-0">
           <li>
             <a class="text-decoration-none" href="#">Home</a>
           </li>
@@ -52,7 +42,9 @@
             >
           </li>
           <li>
-            <a href="#" class="text-decoration-none">Accommodation</a>
+            <a href="#accommodation" class="text-decoration-none"
+              >Accommodation</a
+            >
           </li>
           <li>
             <a href="#" class="text-decoration-none">Reservation</a>
@@ -60,13 +52,15 @@
         </ul>
       </nav>
     </header>
+
+    <!-- !hero-section -->
     <div class="hero-section">
       <img src="./assets/images/hero_logo.jpg" alt="hero-image" />
     </div>
     <section id="welcome" class="welcome">
       <div class="welcome-container">
-        <h2>Welcome to MilkyWay Hotel &amp; Resort</h2>
-        <div class="text-content">
+        <h1 class="__primary-title">Welcome to MilkyWay Hotel &amp; Resort</h1>
+        <div class="__welcome-text-content">
           <p>
             Located at San Juan, Baguio City. Our Hotel is a mixture of
             sophisticated and relaxed ambience offering a big range of quality
@@ -87,9 +81,12 @@
           </p>
         </div>
       </div>
+      <!-- !facilities -->
       <div class="facilities">
-        <div class="header-text"><h4>Facilities</h4></div>
-        <div class="text-content">
+        <div class="header-text">
+          <h3>Facilities</h3>
+        </div>
+        <div class="__facilities-text-content">
           <ul>
             <li><i class="far fa-check-circle"></i>100 luxury guest rooms</li>
             <li><i class="far fa-check-circle"></i>Coctail bar</li>
@@ -104,14 +101,14 @@
       </div>
     </section>
 
-    <!-- Testimonial Section -->
+    <!-- !Testimonial Section -->
     <section class="middle">
       <div class="testimonials">
         <div class="testimonial">
           <div class="img-wrapper">
             <img src="./assets/images/JRSmith.jpg" alt="tesmoial" />
           </div>
-          <div class="text-content">
+          <div class="__testimonial-text-content">
             <span>Jr Smith</span>
             <p>
               The best hotel I’ve ever been privileged enough to stay at.
@@ -124,7 +121,7 @@
           <div class="img-wrapper">
             <img src="./assets/images/seth-curry.jpg" alt="" />
           </div>
-          <div class="text-content">
+          <div class="__testimonial-text-content">
             <span>Seth Curry</span>
             <p>
               The rooms were clean, very comfortable, and the staff was amazing.
@@ -176,10 +173,10 @@
       </div>
     </section>
 
-    <!-- section GALLERY -->
+    <!-- !section GALLERY -->
     <section id="gallery">
       <div class="title-container">
-        <h1 class="text-uppercase">Gallery</h1>
+        <h2 class="__secondary-title">Gallery</h2>
       </div>
       <div class="gallery flex">
         <div class="gallery content-gallery">
@@ -379,9 +376,11 @@
         </div>
       </div>
     </section>
+
+    <!--! THINGS TO DO -->
     <section id="things-to-do">
       <div class="title-container">
-        <h1 class="text-uppercase">Tourist Spots Near The Hotel</h1>
+        <h2 class="__secondary-title">Tourist Spots Near The Hotel</h2>
       </div>
       <div class="container">
         <div class="image-container">
@@ -408,7 +407,7 @@
             </div>
           </figure>
 
-          <!-- La-trinidad-strawberry-farm -->
+          <!-- ?La-trinidad-strawberry-farm -->
           <figure class="gallery__item gallery__item--2">
             <img
               src="./assets/images/la-trinidad-strawberry-farm.jpg"
@@ -428,7 +427,7 @@
               </p>
             </div>
           </figure>
-          <!--Baguio Botanical Garden -->
+          <!-- ?Baguio Botanical Garden -->
           <figure class="gallery__item gallery__item--3">
             <img
               src="./assets/images/Baguio-Botanical-Garden.jpg"
@@ -450,7 +449,7 @@
             </div>
           </figure>
 
-          <!-- Bell  -->
+          <!-- ?Bell  -->
           <figure class="gallery__item gallery__item--4">
             <img
               src="./assets/images/Bell-Church.jpg"
@@ -474,7 +473,134 @@
         <div class="text-content"></div>
       </div>
     </section>
-    <section id="accommodation"></section>
+
+    <!-- !accommodation -->
+    <section id="accommodation">
+      <h2 class="__secondary-title">Package Rooms &amp; Promo Rooms</h2>
+      <div class="container">
+        <div class="image-container">
+          <figure class="gallery__item gallery__item--1">
+            <img
+              src="./assets/images/package-rooms/single-room.jpg"
+              class="gallery__img"
+              alt="single room"
+            />
+
+            <div class="text-content">
+              <div class="__title">
+                <h3>
+                  Single Room &nbsp;
+                  <p>&#8369;450.00/hr</p>
+                </h3>
+                <!-- <p class="__price">&#8369;450.00/hr</p> -->
+              </div>
+              <div class="__div-price"></div>
+
+              <p>
+                A room assigned to one person. May have one or more beds.
+                <br class="__break" />
+                The room size or area of Single Rooms are generally between 37
+                m² to 45 m².
+              </p>
+            </div>
+            <span>air condition, free wi-fi, bath, flat TV</span>
+          </figure>
+          <figure class="gallery__item gallery__item--2">
+            <img
+              src="./assets/images/package-rooms/double-bed.jpg"
+              class="gallery__img"
+              alt="Double bed"
+            />
+            <div class="text-content">
+              <div class="__title">
+                <h3>
+                  Double Bed &nbsp;
+                  <p>&#8369;550.00/hr</p>
+                </h3>
+              </div>
+              <p>
+                A room assigned to two people. May have one or more beds.
+                <br class="__break" />The room size or area of Double Rooms are
+                generally between 40 m² to 45 m².
+              </p>
+            </div>
+            <span>air condition, free wi-fi, bath, flat TV</span>
+          </figure>
+          <figure class="gallery__item gallery__item--3">
+            <img
+              src="./assets/images/package-rooms/triple-bed.jpg"
+              class="gallery__img"
+              alt="triple bed"
+            />
+            <div class="text-content">
+              <div class="__title">
+                <h3>
+                  Triple Bed &nbsp;
+                  <p>&#8369;800.00/hr</p>
+                </h3>
+              </div>
+              <p>
+                A room that can accommodate three persons and has been fitted
+                with three twin beds, one double bed and one twin bed or two
+                double beds.
+                <br class="__break" />The room size or area of Triple Rooms are
+                generally between 45 m² to 65 m².
+              </p>
+            </div>
+            <span> air condition, free wi-fi, bath, flat TV </span>
+          </figure>
+          <figure class="gallery__item gallery__item--4">
+            <img
+              src="./assets/images/package-rooms/queen-room.jpg"
+              class="gallery__img"
+              alt="Queen room"
+            />
+            <div class="text-content">
+              <div class="__title">
+                <h3>
+                  Queen's Room &nbsp;
+                  <p>&#8369;1000.00/hr</p>
+                </h3>
+              </div>
+              <p>
+                A room with a queen-sized bed. May be occupied by one or more
+                people.
+                <br class="__break" />The room size or area of Queen Rooms are
+                generally between 32 m² to 50 m².
+              </p>
+            </div>
+            <span>air condition, free wi-fi, bath, flat TV</span>
+          </figure>
+          <figure class="gallery__item gallery__item--5">
+            <img
+              src="./assets/images/package-rooms/queen-room.jpg"
+              class="gallery__img"
+              alt="King room"
+            />
+            <div class="text-content">
+              <div class="__title">
+                <h3>
+                  King's Room &nbsp;
+                  <p>&#8369;1500.00/hr</p>
+                </h3>
+              </div>
+              <p>
+                A room with a king-sized bed. May be occupied by one or more
+                people.
+                <br class="__break" />The room size or area of King Rooms are
+                generally between 32 m² to 50 m².
+              </p>
+            </div>
+            <span>air condition, free wi-fi, bath, flat TV</span>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- !RESERVATION -->
+    <section id="reservation">
+      <h2 class="__secondary-title">Reservation</h2>
+    </section>
 
     <!-- script -->
   </body>

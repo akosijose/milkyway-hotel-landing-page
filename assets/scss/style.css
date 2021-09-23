@@ -15,6 +15,39 @@ a {
   text-decoration: none;
 }
 
+.__primary-title {
+  margin-bottom: 1.2rem;
+  font-size: 2.2rem;
+}
+
+.__secondary-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem;
+  color: #3f3e3e;
+  margin-bottom: 3rem;
+}
+
+.text-content {
+  padding: 0 3rem;
+  line-height: 1.7;
+  color: #3f3e3e;
+}
+
+.text-content h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
 header {
   height: 6rem;
   display: -webkit-box;
@@ -100,13 +133,13 @@ section.welcome .welcome-container {
   width: 60%;
 }
 
+section.welcome .welcome-container .__welcome-text-content {
+  line-height: 1.7;
+}
+
 section.welcome .welcome-container h2 {
   margin-bottom: 2rem;
   font-size: 2.2rem;
-}
-
-section.welcome .welcome-container .text-content {
-  line-height: 1.7;
 }
 
 section.welcome .facilities {
@@ -114,10 +147,10 @@ section.welcome .facilities {
   width: 40%;
 }
 
-section.welcome .facilities h4 {
+section.welcome .facilities h3 {
   margin-bottom: 2rem;
-  margin-left: 1.9rem;
   font-size: 1.5rem;
+  font-weight: 600;
 }
 
 section.welcome .facilities ul li {
@@ -137,7 +170,7 @@ section.welcome .facilities ul i {
 }
 
 section.middle {
-  background-color: #cecece;
+  background-color: #f4f4f4;
   padding: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -172,15 +205,17 @@ section.middle .testimonials .testimonial {
   margin: 1rem auto;
 }
 
-section.middle .testimonials .testimonial .text-content {
+section.middle .testimonials .testimonial .__testimonial-text-content {
   color: #3f3e3e;
 }
 
-section.middle .testimonials .testimonial .text-content p {
+section.middle .testimonials .testimonial .__testimonial-text-content p {
   font-style: italic;
+  line-height: 1.5;
 }
 
 section.middle .testimonials .testimonial span {
+  font-weight: bold;
   display: inline-block;
   margin-bottom: 0.4rem;
 }
@@ -268,21 +303,7 @@ section.middle .gallery img {
 }
 
 section#gallery {
-  margin: 3rem 0;
-}
-
-section#gallery h1 {
-  font-size: 2.5rem;
-}
-
-section#gallery .title-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 1rem 0 3rem 0;
+  padding: 4rem 6rem;
 }
 
 section#gallery .flex {
@@ -517,8 +538,22 @@ section#gallery figure:hover figcaption::before {
           transform: rotateZ(-45deg) translate3d(0, 0, 0);
 }
 
+section#accommodation {
+  position: relative;
+}
+
+section#accommodation .__price {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
 section#things-to-do {
   padding: 4rem 6rem;
+}
+
+section#things-to-do .gallery__item {
+  margin: 1.5rem 0 1.5rem 0;
 }
 
 section#things-to-do h1 {
@@ -546,7 +581,7 @@ section#things-to-do figure:hover {
 }
 
 section#things-to-do .text-content {
-  margin-left: 2rem;
+  position: relative;
 }
 
 section#things-to-do .text-content h3 {
@@ -564,7 +599,108 @@ section#things-to-do .text-content .__title {
 }
 
 section#things-to-do .text-content .__title span {
-  margin-right: 1.2rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
   font-size: small;
+}
+
+section#accommodation {
+  padding: 4rem 6rem;
+}
+
+section#accommodation .gallery__item {
+  margin: 1.5rem 0 1.5rem 0;
+}
+
+section#accommodation h1 {
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+section#accommodation img {
+  width: 22rem;
+}
+
+section#accommodation figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+section#accommodation figure:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+          box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+section#accommodation .text-content {
+  position: relative;
+}
+
+section#accommodation .text-content h3 {
+  margin-bottom: 1.3rem;
+}
+
+section#accommodation .text-content .__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1rem;
+}
+
+section#accommodation .text-content .__title p {
+  display: inline;
+  font-size: medium;
+}
+
+section#accommodation .text-content span {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: small;
+}
+
+section#things-to-do {
+  background-color: #f4f4f4;
+}
+
+section#things-to-do figure {
+  background-color: #fff;
+}
+
+section#accommodation .text-content p {
+  inline-size: -webkit-min-content;
+  inline-size: -moz-min-content;
+  inline-size: min-content;
+  width: 30rem;
+}
+
+section#accommodation .text-content .__break {
+  margin-bottom: 1rem;
+}
+
+section#accommodation figure {
+  position: relative;
+  background-color: #f4f4f4;
+}
+
+section#accommodation figure span {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: small;
+  font-style: italic;
+  color: #3f3e3e;
+}
+
+section#reservation {
+  padding: 4rem 6rem;
 }
 /*# sourceMappingURL=style.css.map */
