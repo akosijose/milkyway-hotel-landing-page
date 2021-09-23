@@ -19,10 +19,20 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- !lobster font for hero section -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
+
+    <!-- !custom css -->
     <link rel="stylesheet" href="./assets/scss/style.css" />
     <title>MilkyWay Hotel &amp; Resort</title>
   </head>
   <body>
+
+<!-- !button to scroll up -->
+<i class="fas fa-angle-up" onclick="topFunction()" id="myBtn" title="Go to top"></i>
+
     <!-- !header -->
     <header>
       <div class="logo">
@@ -55,7 +65,13 @@
 
     <!-- !hero-section -->
     <div class="hero-section">
-      <img src="./assets/images/hero_logo.jpg" alt="hero-image" />
+      <div class="__header-top">
+        <h1 >Milkyway Hotel &amp; Resort</h1>
+      </div>
+      <div class="__header-content">
+        <h1>Make Your Stay Memorable</h1>
+      </div>
+      <!-- <img src="./assets/images/hero_logo.jpg" alt="hero-image" /> -->
     </div>
     <section id="welcome" class="welcome">
       <div class="welcome-container">
@@ -679,10 +695,11 @@
         </div>
       </div>
       <div class="__group-2">
-        <h3>&copy; Group 2 cutie</h2>
+        <h3>&copy; Group 2 cutie &#128521;</h2>
       </div>
     </footer>
 
     <!-- script -->
+    <script src="./app.js"></script>
   </body>
 </html>
