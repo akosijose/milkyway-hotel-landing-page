@@ -17,6 +17,36 @@ a {
   list-style-type: none;
   text-decoration: none;
 }
+
+// ! heading style
+.__primary-title {
+  margin-bottom: 1.2rem;
+  font-size: 2.2rem;
+}
+
+.__secondary-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem;
+  color: $primary-color;
+  margin-bottom: 3rem;
+}
+
+// ? TEXT CONTENT
+.text-content {
+  padding: 0 3rem;
+  line-height: 1.7;
+  color: $primary-color;
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+}
+// !header
 header {
   height: 6rem;
   display: flex;
@@ -73,6 +103,7 @@ header {
   }
 }
 
+// ! hero section
 .hero-section {
   img {
     width: 100%;
@@ -91,13 +122,13 @@ section.welcome {
     margin-left: 5%;
     width: 60%;
 
+    .__welcome-text-content {
+      line-height: 1.7;
+    }
+
     h2 {
       margin-bottom: 2rem;
       font-size: 2.2rem;
-    }
-
-    .text-content {
-      line-height: 1.7;
     }
   }
 
@@ -105,10 +136,10 @@ section.welcome {
     margin-left: 15%;
     width: 40%;
 
-    h4 {
+    h3 {
       margin-bottom: 2rem;
-      margin-left: 1.9rem;
       font-size: 1.5rem;
+      font-weight: 600;
     }
 
     ul {
@@ -126,9 +157,9 @@ section.welcome {
   }
 }
 
-// default gallery shadow
+// ?default gallery shadow
 
-// section middle
+// ! testimonial
 section.middle {
   background-color: #f4f4f4;
   padding: 3rem;
@@ -148,15 +179,17 @@ section.middle {
       align-items: center;
       margin: 1rem auto;
 
-      .text-content {
+      .__testimonial-text-content {
         color: $primary-color;
 
         p {
           font-style: italic;
+          line-height: 1.5;
         }
       }
 
       span {
+        font-weight: bold;
         display: inline-block;
         margin-bottom: 0.4rem;
       }
@@ -218,17 +251,15 @@ section.middle {
   }
 }
 
+// ! sectin gallery
 section#gallery {
-  margin: 3rem 0;
-  h1 {
-    font-size: 2.5rem;
-  }
-
-  .title-container {
-    display: flex;
-    justify-content: center;
-    padding: 1rem 0 3rem 0;
-  }
+  // .title-container {
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   padding: 1.8rem 0;
+  // }
+  padding: 4rem 6rem;
 
   .flex {
     display: flex;
@@ -386,7 +417,65 @@ section#gallery {
   }
 }
 
-section#things-to-do,
+section#accommodation {
+  position: relative;
+  .__price {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+}
+
+//! things-to-do
+section#things-to-do {
+  padding: 4rem 6rem;
+
+  .gallery__item {
+    margin: 1.5rem 0 1.5rem 0;
+  }
+
+  h1 {
+    padding-bottom: 3rem;
+    text-align: center;
+  }
+  img {
+    width: 22rem;
+  }
+
+  figure {
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all 0.3s;
+
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+        rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+  }
+  .text-content {
+    // margin-left: 2rem;
+    position: relative;
+
+    h3 {
+      margin-bottom: 1.3rem;
+    }
+
+    .__title {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1rem;
+
+      span {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: small;
+      }
+    }
+  }
+}
+
+// ! Accommodation
 section#accommodation {
   padding: 4rem 6rem;
 
@@ -413,21 +502,28 @@ section#accommodation {
     }
   }
   .text-content {
-    margin-left: 2rem;
+    // margin-left: 2rem;
+    position: relative;
 
     h3 {
       margin-bottom: 1.3rem;
     }
 
     .__title {
+      // position: relative;
       display: flex;
       justify-content: space-between;
       margin-top: 1rem;
-
-      span {
-        margin-right: 1.2rem;
-        font-size: small;
+      p {
+        display: inline;
+        font-size: medium;
       }
+    }
+    span {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      font-size: small;
     }
   }
 }
@@ -467,8 +563,4 @@ section#accommodation {
 
 section#reservation {
   padding: 4rem 6rem;
-
-  .__custom-form {
-    margin: 5rem;
-  }
 }

@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -23,6 +23,7 @@
     <title>MilkyWay Hotel &amp; Resort</title>
   </head>
   <body>
+    <!-- !header -->
     <header>
       <div class="logo">
         <img src="./assets/images/Milkywebexpress.png" alt="logo" />
@@ -51,13 +52,15 @@
         </ul>
       </nav>
     </header>
+
+    <!-- !hero-section -->
     <div class="hero-section">
       <img src="./assets/images/hero_logo.jpg" alt="hero-image" />
     </div>
     <section id="welcome" class="welcome">
       <div class="welcome-container">
-        <h2>Welcome to MilkyWay Hotel &amp; Resort</h2>
-        <div class="text-content">
+        <h1 class="__primary-title">Welcome to MilkyWay Hotel &amp; Resort</h1>
+        <div class="__welcome-text-content">
           <p>
             Located at San Juan, Baguio City. Our Hotel is a mixture of
             sophisticated and relaxed ambience offering a big range of quality
@@ -78,9 +81,12 @@
           </p>
         </div>
       </div>
+      <!-- !facilities -->
       <div class="facilities">
-        <div class="header-text"><h4>Facilities</h4></div>
-        <div class="text-content">
+        <div class="header-text">
+          <h3>Facilities</h3>
+        </div>
+        <div class="__facilities-text-content">
           <ul>
             <li><i class="far fa-check-circle"></i>100 luxury guest rooms</li>
             <li><i class="far fa-check-circle"></i>Coctail bar</li>
@@ -95,14 +101,14 @@
       </div>
     </section>
 
-    <!-- Testimonial Section -->
+    <!-- !Testimonial Section -->
     <section class="middle">
       <div class="testimonials">
         <div class="testimonial">
           <div class="img-wrapper">
             <img src="./assets/images/JRSmith.jpg" alt="tesmoial" />
           </div>
-          <div class="text-content">
+          <div class="__testimonial-text-content">
             <span>Jr Smith</span>
             <p>
               The best hotel I’ve ever been privileged enough to stay at.
@@ -115,7 +121,7 @@
           <div class="img-wrapper">
             <img src="./assets/images/seth-curry.jpg" alt="" />
           </div>
-          <div class="text-content">
+          <div class="__testimonial-text-content">
             <span>Seth Curry</span>
             <p>
               The rooms were clean, very comfortable, and the staff was amazing.
@@ -167,10 +173,10 @@
       </div>
     </section>
 
-    <!-- section GALLERY -->
+    <!-- !section GALLERY -->
     <section id="gallery">
       <div class="title-container">
-        <h1 class="text-uppercase">Gallery</h1>
+        <h2 class="__secondary-title">Gallery</h2>
       </div>
       <div class="gallery flex">
         <div class="gallery content-gallery">
@@ -370,9 +376,11 @@
         </div>
       </div>
     </section>
+
+    <!--! THINGS TO DO -->
     <section id="things-to-do">
       <div class="title-container">
-        <h1 class="text-uppercase">Tourist Spots Near The Hotel</h1>
+        <h2 class="__secondary-title">Tourist Spots Near The Hotel</h2>
       </div>
       <div class="container">
         <div class="image-container">
@@ -399,7 +407,7 @@
             </div>
           </figure>
 
-          <!-- La-trinidad-strawberry-farm -->
+          <!-- ?La-trinidad-strawberry-farm -->
           <figure class="gallery__item gallery__item--2">
             <img
               src="./assets/images/la-trinidad-strawberry-farm.jpg"
@@ -419,7 +427,7 @@
               </p>
             </div>
           </figure>
-          <!--Baguio Botanical Garden -->
+          <!-- ?Baguio Botanical Garden -->
           <figure class="gallery__item gallery__item--3">
             <img
               src="./assets/images/Baguio-Botanical-Garden.jpg"
@@ -441,7 +449,7 @@
             </div>
           </figure>
 
-          <!-- Bell  -->
+          <!-- ?Bell  -->
           <figure class="gallery__item gallery__item--4">
             <img
               src="./assets/images/Bell-Church.jpg"
@@ -466,9 +474,9 @@
       </div>
     </section>
 
-    <!-- accommodation -->
+    <!-- !accommodation -->
     <section id="accommodation">
-      <h1 class="text-uppercase">Package Rooms &amp; Promo Rooms</h1>
+      <h2 class="__secondary-title">Package Rooms &amp; Promo Rooms</h2>
       <div class="container">
         <div class="image-container">
           <figure class="gallery__item gallery__item--1">
@@ -480,8 +488,14 @@
 
             <div class="text-content">
               <div class="__title">
-                <h3>Single Room</h3>
+                <h3>
+                  Single Room &nbsp;
+                  <p>&#8369;450.00/hr</p>
+                </h3>
+                <!-- <p class="__price">&#8369;450.00/hr</p> -->
               </div>
+              <div class="__div-price"></div>
+
               <p>
                 A room assigned to one person. May have one or more beds.
                 <br class="__break" />
@@ -499,7 +513,10 @@
             />
             <div class="text-content">
               <div class="__title">
-                <h3>Double Bed</h3>
+                <h3>
+                  Double Bed &nbsp;
+                  <p>&#8369;550.00/hr</p>
+                </h3>
               </div>
               <p>
                 A room assigned to two people. May have one or more beds.
@@ -517,7 +534,10 @@
             />
             <div class="text-content">
               <div class="__title">
-                <h3>Triple Bed</h3>
+                <h3>
+                  Triple Bed &nbsp;
+                  <p>&#8369;800.00/hr</p>
+                </h3>
               </div>
               <p>
                 A room that can accommodate three persons and has been fitted
@@ -537,7 +557,10 @@
             />
             <div class="text-content">
               <div class="__title">
-                <h3>Queen's Room</h3>
+                <h3>
+                  Queen's Room &nbsp;
+                  <p>&#8369;1000.00/hr</p>
+                </h3>
               </div>
               <p>
                 A room with a queen-sized bed. May be occupied by one or more
@@ -556,7 +579,10 @@
             />
             <div class="text-content">
               <div class="__title">
-                <h3>King's room</h3>
+                <h3>
+                  King's Room &nbsp;
+                  <p>&#8369;1500.00/hr</p>
+                </h3>
               </div>
               <p>
                 A room with a king-sized bed. May be occupied by one or more
@@ -570,24 +596,10 @@
         </div>
       </div>
     </section>
+
+    <!-- !RESERVATION -->
     <section id="reservation">
-      <h2>Reservation</h2>
-      <p>Coming soon...</p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum iusto
-        quisquam deserunt explicabo ducimus consectetur officiis soluta iste
-        sapiente quia!
-      </p>
-      <!-- <form class="__custom-form">
-        <select class="form-select" aria-label="Default select example">
-          <option selected>Open this select menu</option>
-          <option value="1">Single Room</option>
-          <option value="2">Double Bed</option>
-          <option value="3">Triple Bed</option>
-          <option value="4">Queen's Room</option>
-          <option value="5">King's Room</option>
-        </select>
-      </form> -->
+      <h2 class="__secondary-title">Reservation</h2>
     </section>
 
     <!-- script -->
