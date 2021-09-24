@@ -1,3 +1,5 @@
+@use './partials/screen_size';
+
 * {
   margin: 0;
   padding: 0;
@@ -733,5 +735,26 @@ footer {
     text-align: center;
     grid-column: 4/6;
     grid-row: 2;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  body {
+    .hero-section {
+      .__header-top {
+        h1 {
+          line-height: 2;
+          margin-top: 25rem;
+          font-size: 5rem;
+        }
+      }
+      .__header-content {
+        h1 {
+          line-height: 2;
+          margin-top: 27rem;
+          font-size: 5rem;
+        }
+      }
+    }
   }
 }
